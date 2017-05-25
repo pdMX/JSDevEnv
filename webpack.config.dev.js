@@ -15,11 +15,11 @@ export default {
     filename: 'bundle.js'
   },
   plugins: [
-        new HtmlWebpackPlugin({
+    // Create HTML file that includes reference to bundled JS.
+    new HtmlWebpackPlugin({
       template: 'src/index.html',
       inject: true
     })
-
   ],
   module: {
     loaders: [
@@ -27,4 +27,4 @@ export default {
       {test: /\.css$/, loaders: ['style','css']}
     ]
   }
-};
+}
