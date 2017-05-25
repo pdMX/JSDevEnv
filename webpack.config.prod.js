@@ -9,6 +9,7 @@ export default {
   devtool: 'source-map',
   noInfo: false,
   entry: {
+    //will contain all of vendor code
     vendor: path.resolve(__dirname, 'src/vendor'),
     main: path.resolve(__dirname, 'src/index')
   },
